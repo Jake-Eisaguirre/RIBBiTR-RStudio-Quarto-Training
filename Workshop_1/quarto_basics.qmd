@@ -4,4 +4,74 @@ format: html
 editor: visual
 ---
 
-## 
+### [Discussion Outline]{.underline}
+
+-   Initial preface of new/not new for some. Building blocks for manuscript and presentation skills
+-   RStudio built on open science principles. What is open science?
+    -   An umbrella term for various assumptions about the development and dissemination of knowledge.
+    -   The general movement to make scientific research and its dissemination accessible.
+    -   Includes aspects of open access, open data, and open source.
+    -   [RStudio OpenSource](https://posit.co/products/open-source/)
+    -   [Ultimately]{.underline}: 100% reproducible from cradle to grave and 100% accessible.
+        -   side note: error propagation though process in reproducing results simply in a paper
+        -   entire package published: data, script, manuscript
+    -   Rabbit Hole if interested: 5 different schools of thought open science
+        -   Infrastructure
+        -   Measurement
+        -   Public
+        -   Democratic
+        -   Pragmatic
+-   RStudio is nothing more then a fancy text editor
+
+### [Action Outline]{.underline}
+
+-   create new project (every one see screen?) -\> discuss benefits of project
+    -   file paths
+    -   reproducible
+-   New quarto doc -\> discuss quarto
+    -   [Quarto Guide](https://quarto.org/docs/guide/)
+-   work through quarto lay out. console and terminal. Environment, history, and git, Finally bottom right pane
+
+#### [Title Examples - Switch between visual and source]{.underline}
+
+# Biggest Title
+
+### Smaller Title
+
+#### [Bullet points and List]{.underline}
+
+1.  Bull frog
+
+    i.  Male
+    ii. Female
+
+2.  Green Frog
+
+3.  Leopard Frog
+
+4.  Washy
+
+    i.  Male
+    ii. Female
+
+#### [Text Formatting]{.underline}
+
+**Bull frog - bold**
+
+*Bull frog* - italics
+
+**Bull frog** - bold italics
+
+Bull frog ^2^ - superscript
+
+Bull frog~2~ - subscript
+
+~~Bull frog~~ - strike through
+
+`lm(bd_load ~ svl_mm, data = clean_data)` - verbatim code
+
+#### [Insert Image and URL]{.underline}
+
+![Red Eyed Tree Frog](images/red_eye.jpeg){fig-align="center" width="50%"}
+
+[RIBBiTR Website](https://ribbitr.com/)
