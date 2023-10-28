@@ -1,7 +1,9 @@
 ---
 title: "Quarto Basics"
-format: html
-editor: visual
+format:
+  html:
+    toc: true
+    code-fold: true
 ---
 
 ### [Discussion Outline]{.underline}
@@ -31,6 +33,7 @@ editor: visual
 -   New quarto doc -\> discuss quarto
     -   [Quarto Guide](https://quarto.org/docs/guide/)
 -   work through quarto lay out. console and terminal. Environment, history, and git, Finally bottom right pane
+-   render document
 
 #### [Title Examples - Switch between visual and source]{.underline}
 
@@ -81,6 +84,10 @@ Bull frog~2~ - subscript
 ##### New code chunk: command + shift + i
 
 ```{r}
+#| message: false
+#| echo: true
+
+library(tidyverse)
 
 data(iris)
 
@@ -93,3 +100,19 @@ ggplot(data = iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
   
 
 ```
+
+#### [Yaml]{.underline} 
+
+-   TOC
+
+-   Format - html & pdf
+
+-   code-fold
+
+-   docx
+
+#### [Github]{.underline}
+
+-   github tab
+
+-   command line github
