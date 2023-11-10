@@ -9,6 +9,12 @@ format:
 ### [Discussion Outline]{.underline}
 
 -   Initial preface of new/not new for some. Building blocks for manuscript and presentation skills
+-   RStudio nothing more then a text editor.
+    -   Learning curve is worth it for:
+        -   In text code chunks
+        -   presentations, courses, teaching
+        -   collaboration and Git/Github
+        -   open science and reproducibility
 -   RStudio built on open science principles. What is open science?
     -   An umbrella term for various assumptions about the development and dissemination of knowledge.
     -   The general movement to make scientific research and its dissemination accessible.
@@ -79,7 +85,7 @@ Bull frog~2~ - subscript
 
 [RIBBiTR Website](https://ribbitr.com/)
 
-#### [Code Block ]{.underline}
+#### [Code Block]{.underline}
 
 ##### New code chunk: command + shift + i
 
@@ -101,13 +107,15 @@ ggplot(data = iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
 
 ```
 
-#### [Yaml]{.underline} 
+#### [Yaml]{.underline}
 
 -   TOC
 
 -   Format - html & pdf
 
 -   code-fold
+
+-   
 
 -   docx
 
