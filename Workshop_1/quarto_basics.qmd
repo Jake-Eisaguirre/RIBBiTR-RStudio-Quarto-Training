@@ -35,6 +35,7 @@ format:
 
 -   create new project (every one see screen?) -\> discuss benefits of project
     -   file paths
+        -   `here()`
     -   reproducible
 -   New quarto doc -\> discuss quarto
     -   [Quarto Guide](https://quarto.org/docs/guide/)
