@@ -8,7 +8,6 @@ format:
 
 ### [Discussion Outline]{.underline}
 
--   Initial preface of new/not new for some. Building blocks for manuscript and presentation skills
 -   RStudio nothing more then a text editor.
     -   Learning curve is worth it for:
         -   In text code chunks
@@ -30,6 +29,7 @@ format:
         -   Democratic
         -   Pragmatic
 -   RStudio is nothing more then a fancy text editor
+-   Initial preface of new/not new for some. Building blocks for manuscript and presentation skillss
 
 ### [Action Outline]{.underline}
 
