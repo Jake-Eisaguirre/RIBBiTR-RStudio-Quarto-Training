@@ -18,10 +18,10 @@ format:
     -   An umbrella term for various assumptions about the development and dissemination of knowledge.
     -   The general movement to make scientific research and its dissemination accessible.
     -   Includes aspects of open access, open data, and open source.
-    -   [RStudio OpenSource](https://posit.co/products/open-source/)
     -   [Ultimately]{.underline}: 100% reproducible from cradle to grave and 100% accessible.
         -   side note: error propagation though process in reproducing results simply in a paper
         -   entire package published: data, script, manuscript
+    -   [RStudio OpenSource](https://posit.co/products/open-source/)
     -   Rabbit Hole if interested: 5 different schools of thought open science
         -   Infrastructure
         -   Measurement
