@@ -1,0 +1,37 @@
+---
+format: pdf
+editor: visual
+bibliography: references.bib
+csl: ecology.csl
+---
+
+## Relationship between frog size and weight in the Sierra Nevada yellow-legged frog, *Rana sierrae*
+
+Jane Q. Johnson^1\*^, Ned R. Nichols^2^
+
+^1^ University of California, Santa Barbara
+
+^2^ University of Colorado, Boulder
+
+\* Corresponding author: jqjohnson\@gmail.com
+
+### Abstract
+
+### Introduction
+
+### Methods and Materials
+
+We captured xx post-metamorphic *R. sierrae* (hereafter, "frogs") from Mesa Lake, Sierra National Forest, on August 15, 2023.
+Frog snout-vent length was measured to the nearest millimeter using digital calipers and frogs were weighed to the nearest gram using a spring scale.
+To describe the relationship between length and weight, we plotted log~10~(frog weight) against log~10~(frog length).
+
+### Results
+
+The relationship between frog length and weight was linear on a log~10~ scale and showed little scatter around the regression line.
+
+```{r}
+#| echo: false
+
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
