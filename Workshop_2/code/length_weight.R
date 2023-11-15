@@ -25,6 +25,7 @@ len_wt <- tbl(con, "visit") %>%
   filter(site_id == 70550, 
     capture_life_stage %in% c("subadult", "adult"), 
     capture_animal_state != "dead", 
+    !(length == 36 & weight == 34 | length == 54 & weight == 2),
     across(c(length, weight), ~ !is.na(.))) %>% 
   collect()
 

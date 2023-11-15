@@ -1769,7 +1769,6 @@ site_id,visit_date,species,capture_life_stage,capture_animal_state,length,weight
 70550,2021-06-23,ramu,adult,healthy,54,23
 70550,2021-06-23,ramu,adult,healthy,58,23
 70550,2021-06-23,ramu,adult,healthy,65,58
-70550,2021-06-23,ramu,adult,healthy,54,2
 70550,2021-06-23,ramu,adult,healthy,64,32
 70550,2021-06-23,ramu,adult,healthy,67,31
 70550,2021-06-23,ramu,adult,healthy,45,12
@@ -2013,7 +2012,6 @@ site_id,visit_date,species,capture_life_stage,capture_animal_state,length,weight
 70550,2011-08-20,ramu,adult,healthy,41,6
 70550,2010-07-20,ramu,subadult,healthy,38,6
 70550,2010-07-20,ramu,subadult,healthy,38,6
-70550,2010-07-20,ramu,subadult,healthy,36,34
 70550,2010-07-20,ramu,subadult,healthy,36,4
 70550,2010-08-13,ramu,adult,healthy,43,8
 70550,2010-08-13,ramu,subadult,healthy,31,4
