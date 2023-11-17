@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-<!--# Open manuscript.qmd, references.bib, length_weight.Rn notes.qmd -->
+<!--# Open manuscript.qmd, references.bib, length_weight.R, notes.qmd. Open notes.html in browswer window.  -->
 
 Focus of Workshop 2 is writing a manuscript using RStudio and Quarto.
 Quarto makes writing a manuscript easy compared to MS Word and Google Doc.

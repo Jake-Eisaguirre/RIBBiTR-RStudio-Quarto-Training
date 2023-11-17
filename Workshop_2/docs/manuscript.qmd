@@ -1,6 +1,6 @@
 ---
 format: 
-  pdf:
+  docx:
     include-in-header: 
       text: 
         \usepackage{lineno}
