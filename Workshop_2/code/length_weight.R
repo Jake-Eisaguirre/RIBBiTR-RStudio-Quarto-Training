@@ -29,6 +29,10 @@ len_wt <- tbl(con, "visit") %>%
     across(c(length, weight), ~ !is.na(.))) %>% 
   collect()
 
+# Close database connection
+dbDisconnect(con)
+rm(con)
+
 # Save data as csv file
 write_csv(len_wt, here("Workshop_2", "data", "len_wt.csv"))
 

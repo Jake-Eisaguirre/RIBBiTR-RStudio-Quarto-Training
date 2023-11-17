@@ -12,7 +12,7 @@ bibliography: references.bib
 csl: ecology.csl
 ---
 
-## Relationship between frog size and body mass in the Sierra Nevada yellow-legged frog, *Rana sierrae*
+## Relationship between body size and mass in the Sierra Nevada yellow-legged frog, *Rana sierrae*
 
 Jane Q. Johnson^1\*^, Ned R. Nichols^2^
 
@@ -24,7 +24,18 @@ Jane Q. Johnson^1\*^, Ned R. Nichols^2^
 
 ### Abstract
 
-Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget duis at tellus at urna condimentum mattis pellentesque id nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium.
+(*This gibberish was written by ChatGPT*)
+
+The Sierra Nevada yellow-legged frog (*Rana sierrae*) is a flagship species for high-altitude ecosystems, playing a crucial role in maintaining ecological balance.
+This study explores the intricate relationship between length and weight in *R. sierrae*, aiming to elucidate patterns, drivers, and implications for both ecological understanding and conservation efforts.
+A comprehensive dataset, spanning diverse populations across the Sierra Nevada range, was analyzed to discern variations in body size and mass.
+Our findings reveal a complex length-weight relationship in *R. sierrae*, characterized by distinct patterns influenced by factors such as elevation, habitat type, and seasonal dynamics.
+While isometric growth was observed in certain populations, others exhibited allometric patterns, indicating potential adaptations to specific environmental conditions.
+The influence of biotic and abiotic factors, including temperature fluctuations, resource availability, and predation pressures, on the length-weight dynamics was also investigated.
+The study underscores the importance of considering life history traits, reproductive strategies, and environmental context when interpreting the length-weight relationship in this species.
+Furthermore, our research has direct implications for the conservation of *R. sierrae*, as alterations in body size and weight may serve as early indicators of environmental stressors and population health.
+In conclusion, this investigation provides valuable insights into the length-weight relationship of *R. sierrae*, contributing to a deeper understanding of the ecological dynamics of this iconic amphibian.
+These findings have direct relevance for conservation strategies in the face of ongoing environmental changes, facilitating targeted efforts to preserve the Sierra Nevada yellow-legged frog and its unique mountainous habitat.
 
 ### Introduction
 
@@ -54,7 +65,6 @@ As part of a long-term study of amphibians in the Sierra Nevada [@knapp2003], we
 Frog were captured during the summer active season using hand nets.
 We measured frog snout-vent length to the nearest millimeter using digital calipers and frogs were weighed to the nearest gram using a spring scale.
 To describe the relationship between length and weight, we plotted log~10~(frog weight) against log~10~(frog length).
-\]
 
 ### Results
 
@@ -80,7 +90,14 @@ The relationship between frog length and mass was linear on a log~10~ scale and 
 
 ### Discussion
 
-Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget duis at tellus at urna condimentum mattis pellentesque id nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium.
+*Written by ChatGPT*
+
+It is evident that the intricate interplay between these length and mass is influenced by a myriad of ecological, physiological, and environmental factors.
+Our findings align with previous studies suggesting that variations in body size and mass are not uniform across species, emphasizing the need for a nuanced understanding of the specific ecological context.
+The identification of isometric versus allometric growth patterns in different animal taxa underscores the species-specific adaptations to environmental conditions, resource availability, and life history strategies.
+Furthermore, the observed relationships provide valuable insights into the potential impacts of anthropogenic disturbances on animal populations.
+As environmental changes continue to accelerate, the length-weight relationship serves not only as a crucial metric for understanding the physiological dynamics of species but also as an essential tool for predicting and mitigating the consequences of habitat alterations on biodiversity and ecosystem functioning.
+This discussion contributes to the broader understanding of the intricate ecological tapestry that governs the length-weight relationship in animals and underscores its significance in the context of contemporary conservation challenges.
 
 {{< pagebreak >}}
 
@@ -104,6 +121,8 @@ knitr::kable(head(lenwt_table, 15))
 ![Relationship between length and body mass in post-metamorphic *R. sierrae*. Axes are on a log~10~ scale.](figures/lenwt_plot.png){#fig-lenwt}
 
 {{< pagebreak >}}
+
+### Acknowledgements
 
 ### References
 

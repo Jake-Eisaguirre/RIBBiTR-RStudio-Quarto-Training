@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Workshop 2: Notes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="notes_files/libs/clipboard/clipboard.min.js"></script>
+<script src="notes_files/libs/quarto-html/quarto.js"></script>
+<script src="notes_files/libs/quarto-html/popper.min.js"></script>
+<script src="notes_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="notes_files/libs/quarto-html/anchor.min.js"></script>
+<link href="notes_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="notes_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="notes_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="notes_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="notes_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Workshop 2: Notes</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<!--# Open manuscript.qmd, references.bib, length_weight.Rn notes.qmd -->
+<p>Focus of Workshop 2 is writing a manuscript using RStudio and Quarto. Quarto makes writing a manuscript easy compared to MS Word and Google Doc. Open Science principles of transparency, reproducibility, and collaboration are inherent in the workflow we’ll demonstrate today. Similar workflow allows for development of any text document, including lecture notes, CV, etc., as well as presentations that we will demonstrate in Workshop 3.</p>
+<p>Will show you a manuscript-like document that I drafted to demonstrate the key features of Quarto, and especially those that facilitate manuscript writing.</p>
+<p>Share RStudio window. Change Zoom level to optimize viewing for participants. Close unnecessary RStudio panes.</p>
+<p>Best practices:</p>
+<ul>
+<li><p>Create manuscript (or any other RStudio file) within an RStudio project (demonstrate). When working on that project, open using the project file (.Rproj).</p></li>
+<li><p>Within project, create subfolders for different types of files: code, data, docs, out.</p></li>
+</ul>
+<p>Key Quarto features</p>
+<ul>
+<li><p>RStudio panes - View Quarto (.qmd) file and rendered doc simultaneously in RStudio.</p></li>
+<li><p>Virtually unlimited flexibility in document layout. Each format type (e.g., html, pdf, docx) utilizes a default template, custom templates (“extensions”) can also be created (e.g., to reflect exact formatting requirements of a particular journal). See this <a href="https://www.r-bloggers.com/2023/02/making-pretty-pdfs-with-quarto/">link</a> for an example. Given that many journals still require submission of .docx formatted manuscripts, output using default template will require minor tweaking. Show examples of the manuscript.qmd rendered to html, pdf, and docx formats.</p></li>
+<li><p>manuscript.qmd: All sections typically included in a manuscript are present in rendered document (e.g., title, authors, affiliations, abstract, introduction, etc.).</p>
+<ul>
+<li><p>How did I create the manuscript using Quarto? Easy, with very little manual formatting of text, references, tables, and figures.</p></li>
+<li><p>What does the Quarto document look like in the source versus visual editors? Can write using either source or visual editor, will often switch between these editors.</p></li>
+<li><p>RStudio/Quarto is just a fancy text editor, similar in many ways to writing in MS Word or Google Docs, except that RStudio has tools (Git, GitHub) that make workflow transparent, reproducible, and collaborative. <a href="https://quarto.org">Quarto reference guide</a> is your friend.</p></li>
+</ul></li>
+<li><p>Citations &amp; References:</p>
+<ul>
+<li><p>Quarto makes dealing with references simple (really!).</p></li>
+<li><p>References cited in manuscript and listed in References section are all in a .bib file that you create when you start writing the manuscript. Can be created manually, e.g., by exporting references from Google Scholar as BibTex and copying contents of the exported text file into the .bib file. Quarto provides a much better option: demonstrate process of adding a citation to manuscript and the associated reference to .bib file.</p></li>
+<li><p>Journal-specific formatting of citations/references is specified by .csl file. 8,500+ CSL definitions available in the CSL Project’s <a href="https://github.com/citation-style-language/styles">central repository</a> or Zotero’s <a href="https://www.zotero.org/styles">style repository</a>. Other formatting options are available based on what information is included for each reference in the .bib file. For example, to create links from each reference to the on-line article, include DOI in .bib file (see Santini et al.&nbsp;(2018) in References section.</p></li>
+<li><p>Lots of different ways to tweak citation structure. As example, see Feldman citation in Introduction section.</p></li>
+</ul></li>
+<li><p>Figures, Tables, &amp; More:</p>
+<ul>
+<li><p>Created dataset with R script (\code\length_weight.R). For use in this manuscript, that dataset is read into the project using a code block embedded in manuscript (Methods and Materials section). That makes it available for creating tables, figures, retrieving key values using in-line code.</p></li>
+<li><p>In-line code: Insert values directly from dataset or statistical analyses, ensures transparency and repeatability, avoids having to manually insert new values if dataset or analyses are updated. Example in first line of Methods and Materials section.</p></li>
+<li><p>Tables: Can create tables directly from dataset. For example, see code block at the beginning of the Tables section. Lots of formatting options available to customize table.</p></li>
+<li><p>Figures: Can be created by embedding figure files generated using stand-alone R scripts (and saved to a subdirectory of the directory that contains the manuscript .qmd file), or R scripts can be included in manuscript files as code blocks and figure embedded without having to reference a saved file. For example, see code block at beginning of Figures section. Figures can be placed immediately following code block or in a separate section. Cross-referencing of figures (and tables) is automatic.</p></li>
+</ul></li>
+</ul>
+<p>Collaboration: RStudio Integration with Git/GitHub</p>
+<ul>
+<li><p>Git is free and open source version control software on your computer, allows you to version control files in a project (“repository”) in a highly structured way. GitHub is a commercial web-based platform that stores your version-controlled repositories in the cloud where they are available for real-time collaboration. Repositories can be private or public.</p></li>
+<li><p>Collaborate on a project via the remote (cloud) repository:</p></li>
+</ul>
+<p><img src="figures/github.png" class="img-fluid"></p>
+<ul>
+<li><p>Developer A (Roland) creates a new project on which he wishes to collaborate with Developer B (Jake). Jake clones the remote repo to his local computer. To collaborate, Roland makes a change to his local copy of the repo, pushes it to the remote repo, then Jake pulls the changes from the remote to his local repo. collaboratively develop the project by making changes locally pushing, etc., etc.</p></li>
+<li><p>Git workflow:</p>
+<ul>
+<li><p>Add: After making changes to one or more files, “add” the modified or new files to the staging area.</p></li>
+<li><p>Commit: Move the files from the staging area to the local repo.</p></li>
+<li><p>Push: Push the staged files from the local repo to the remote repo.</p></li>
+<li><p>Pull: Pull any modified or new files (e.g., those created by collaborator) from the remote repo to your local repo.</p></li>
+</ul></li>
+<li><p>Demonstrate using RStudio: Add text to Acknowledgements section, push, Jake pulls, adds additional text to same section, pushes, I pull.</p></li>
+</ul>
+<p>Questions to resolve:</p>
+<ol type="1">
+<li><p>Share RStudio window or monitor window? The latter would allow sharing of other documents (e.g., html and .docx documents, demonstrate Google Scholar BibTex references).</p></li>
+<li><p>How large to make text to make it visible to participants?</p></li>
+</ol>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
