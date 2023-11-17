@@ -1,11 +1,18 @@
 ---
-format: pdf
+format: 
+  pdf:
+    include-in-header: 
+      text: 
+        \usepackage{lineno}
+    include-before-body: 
+      text: 
+        \linenumbers
 editor: visual
 bibliography: references.bib
 csl: ecology.csl
 ---
 
-## Relationship between frog size and weight in the Sierra Nevada yellow-legged frog, *Rana sierrae*
+## Relationship between frog size and body mass in the Sierra Nevada yellow-legged frog, *Rana sierrae*
 
 Jane Q. Johnson^1\*^, Ned R. Nichols^2^
 
@@ -13,25 +20,25 @@ Jane Q. Johnson^1\*^, Ned R. Nichols^2^
 
 ^2^ University of Colorado, Boulder
 
-\* Corresponding author: jqjohnson\@gmail.com
+\* Corresponding author: jqjohnson\@gmail.com\
 
 ### Abstract
 
+Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget duis at tellus at urna condimentum mattis pellentesque id nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium.
+
 ### Introduction
+
+Body mass is a fundamental parameter in ecology because it is related to several important attributes of individuals and populations, including species metabolic rates [@gillooly2001; @brown2004] and population abundance [@peters1983].
+As stated by @feldman2012, among vertebrates, body mass is commonly recorded in birds and mammals, but is less often recorded in amphibians.
+As a result, in amphibians, body size (as snout-vent length) is available for many species, but body mass data are often lacking [@santini2018, pp. 13-14].
+
+In this study, we report body length and mass recorded from more than 3000 post-metamorphic Sierra Nevada yellow-legged frogs (*Rana sierrae*), and describe the relationship between these two variables.
 
 ### Methods and Materials
 
-We captured xx post-metamorphic *R. sierrae* (hereafter, "frogs") from Mesa Lake, Sierra National Forest, on August 15, 2023.
-Frog snout-vent length was measured to the nearest millimeter using digital calipers and frogs were weighed to the nearest gram using a spring scale.
-To describe the relationship between length and weight, we plotted log~10~(frog weight) against log~10~(frog length).
-
-### Results
-
-The relationship between frog length and weight was linear on a log~10~ scale and showed little scatter around the regression line.
-
 ```{r}
-#| echo: false
-#| warning: false
+#| include: false
+#| code-fold: true
 
 # Load required packages
 if (!require(librarian)){
@@ -40,22 +47,65 @@ if (!require(librarian)){
 }
 librarian::shelf(here, tidyverse)
 
-# Read in dataset
-options(readr.show_col_types = FALSE)
 len_wt <- read_csv(here("Workshop_2", "data", "len_wt.csv"))
+```
+
+As part of a long-term study of amphibians in the Sierra Nevada [@knapp2003], we captured `r nrow(len_wt)` post-metamorphic *R. sierrae* (hereafter, "frogs") from Mesa Lake, Sierra National Forest, during the period 2000-2015 (@fig-lakefrog).
+Frog were captured during the summer active season using hand nets.
+We measured frog snout-vent length to the nearest millimeter using digital calipers and frogs were weighed to the nearest gram using a spring scale.
+To describe the relationship between length and weight, we plotted log~10~(frog weight) against log~10~(frog length).
+\]
+
+### Results
+
+```{r}
+#| include: false
+#| code-fold: true
 
 # Create plot
 len_wt <- len_wt %>% 
   mutate(loglength = log10(length), 
          logweight = log10(weight))
 
-ggplot(data = len_wt, aes(x = length, y = weight)) +
+p1 <- ggplot(data = len_wt, aes(x = length, y = weight)) +
   geom_point() +
   geom_smooth(method = "lm") +
   scale_x_log10("Snout-vent length (mm)") +
-  scale_y_log10("Weight (g)")
+  scale_y_log10("Body mass (g)")
 
-ggsave
-
-
+ggsave(here("Workshop_2", "docs", "figures", "lenwt_plot.png"))
 ```
+
+The relationship between frog length and mass was linear on a log~10~ scale and showed little scatter around the regression line (@fig-lenwt).
+
+### Discussion
+
+Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget duis at tellus at urna condimentum mattis pellentesque id nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium.
+
+{{< pagebreak >}}
+
+### Tables
+
+```{r}
+#| echo: false
+#| tbl-cap: "A subset of the data used in this study. Length and mass are expressed in millimeters and grams, respectively."
+
+lenwt_table <- len_wt %>% 
+  select(site_id, visit_date, capture_life_stage, length, weight) %>% 
+  rename(life_stage = capture_life_stage,
+         mass = weight)
+knitr::kable(head(lenwt_table, 15))
+```
+
+### Figures
+
+![(A) Mesa Lake where the study was conducted. (B) An adult Sierra Nevada yellow-legged frog (*Rana sierrae*).](figures/lake_frog.jpg){#fig-lakefrog}
+
+![Relationship between length and body mass in post-metamorphic *R. sierrae*. Axes are on a log~10~ scale.](figures/lenwt_plot.png){#fig-lenwt}
+
+{{< pagebreak >}}
+
+### References
+
+::: {refs}
+:::

@@ -1,4 +1,4 @@
-# Retrieve frog lengths and weights from "amphibians" database
+# Retrieve frog lengths and weights from "amphibians" database, minor data cleaning
 
 # Load required packages
 if (!require(librarian)){
