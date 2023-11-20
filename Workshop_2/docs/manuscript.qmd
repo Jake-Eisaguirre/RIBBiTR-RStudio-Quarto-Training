@@ -124,6 +124,13 @@ knitr::kable(head(lenwt_table, 15))
 
 ### Acknowledgements
 
+We thank the following for important contributions to this study: E.
+Hegeman and A.
+Lindauer--project and data management, field and laboratory work; A.
+Barbella and K.
+Rose--laboratory work; C.
+Kamoroff and numerous summer technicians--field work; staff at Sequoia-Kings Canyon and Yosemite National Parks, Inyo and Sierra National Forests, California Department of Fish and Wildlife, U.S. Fish and Wildlife Service, University of California-Santa Barbara Institutional Animal Care and Use Committee, and Sierra Nevada Aquatic Research Laboratory--research permits, logistical support, and/or field assistance.
+
 ### References
 
 ::: {refs}
