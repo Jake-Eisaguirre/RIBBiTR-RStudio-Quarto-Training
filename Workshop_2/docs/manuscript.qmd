@@ -131,6 +131,8 @@ Barbella and K.
 Rose--laboratory work; C.
 Kamoroff and numerous summer technicians--field work; staff at Sequoia-Kings Canyon and Yosemite National Parks, Inyo and Sierra National Forests, California Department of Fish and Wildlife, U.S. Fish and Wildlife Service, University of California-Santa Barbara Institutional Animal Care and Use Committee, and Sierra Nevada Aquatic Research Laboratory--research permits, logistical support, and/or field assistance.
 
+This project was supported by grants from the National Park Service (to R.A.K.), Yosemite Conservancy (to R.A.K.), and National Science Foundation (EF-0723563, to C. Briggs; DEB-1557190, to C. Briggs; DEB-2133401, to M.Q.W; and DBI-2120084, to C. Richards-Zawacki).
+
 ### References
 
 ::: {refs}
