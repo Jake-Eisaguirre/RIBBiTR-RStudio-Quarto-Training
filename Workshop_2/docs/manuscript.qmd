@@ -42,6 +42,7 @@ These findings have direct relevance for conservation strategies in the face of 
 Body mass is a fundamental parameter in ecology because it is related to several important attributes of individuals and populations, including species metabolic rates [@gillooly2001; @brown2004] and population abundance [@peters1983].
 As stated by @feldman2012, among vertebrates, body mass is commonly recorded in birds and mammals, but is less often recorded in amphibians.
 As a result, in amphibians, body size (as snout-vent length) is available for many species, but body mass data are often lacking [@santini2018, pp. 13-14].
+[@Knapp2016]
 
 In this study, we report body length and mass recorded from more than 3000 post-metamorphic Sierra Nevada yellow-legged frogs (*Rana sierrae*), and describe the relationship between these two variables.
 
@@ -123,6 +124,13 @@ knitr::kable(head(lenwt_table, 15))
 {{< pagebreak >}}
 
 ### Acknowledgements
+
+We thank the following for important contributions to this study: E.
+Hegeman and A.
+Lindauer--project and data management, field and laboratory work; A.
+Barbella and K.
+Rose--laboratory work; C.
+Kamoroff and numerous summer technicians--field work; staff at Sequoia-Kings Canyon and Yosemite National Parks, Inyo and Sierra National Forests, California Department of Fish and Wildlife, U.S. Fish and Wildlife Service, University of California-Santa Barbara Institutional Animal Care and Use Committee, and Sierra Nevada Aquatic Research Laboratory--research permits, logistical support, and/or field assistance.
 
 ### References
 
