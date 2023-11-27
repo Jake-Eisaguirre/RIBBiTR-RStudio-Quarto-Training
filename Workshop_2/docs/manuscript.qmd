@@ -26,23 +26,11 @@ Jane Q. Johnson^1\*^, Ned R. Nichols^2^
 
 (*This gibberish was written by ChatGPT*)
 
-The Sierra Nevada yellow-legged frog (*Rana sierrae*) is a flagship species for high-altitude ecosystems, playing a crucial role in maintaining ecological balance.
-This study explores the intricate relationship between length and weight in *R. sierrae*, aiming to elucidate patterns, drivers, and implications for both ecological understanding and conservation efforts.
-A comprehensive dataset, spanning diverse populations across the Sierra Nevada range, was analyzed to discern variations in body size and mass.
-Our findings reveal a complex length-weight relationship in *R. sierrae*, characterized by distinct patterns influenced by factors such as elevation, habitat type, and seasonal dynamics.
-While isometric growth was observed in certain populations, others exhibited allometric patterns, indicating potential adaptations to specific environmental conditions.
-The influence of biotic and abiotic factors, including temperature fluctuations, resource availability, and predation pressures, on the length-weight dynamics was also investigated.
-The study underscores the importance of considering life history traits, reproductive strategies, and environmental context when interpreting the length-weight relationship in this species.
-Furthermore, our research has direct implications for the conservation of *R. sierrae*, as alterations in body size and weight may serve as early indicators of environmental stressors and population health.
-In conclusion, this investigation provides valuable insights into the length-weight relationship of *R. sierrae*, contributing to a deeper understanding of the ecological dynamics of this iconic amphibian.
-These findings have direct relevance for conservation strategies in the face of ongoing environmental changes, facilitating targeted efforts to preserve the Sierra Nevada yellow-legged frog and its unique mountainous habitat.
+The Sierra Nevada yellow-legged frog (*Rana sierrae*) is a flagship species for high-altitude ecosystems, playing a crucial role in maintaining ecological balance. This study explores the intricate relationship between length and weight in *R. sierrae*, aiming to elucidate patterns, drivers, and implications for both ecological understanding and conservation efforts. A comprehensive dataset, spanning diverse populations across the Sierra Nevada range, was analyzed to discern variations in body size and mass. Our findings reveal a complex length-weight relationship in *R. sierrae*, characterized by distinct patterns influenced by factors such as elevation, habitat type, and seasonal dynamics. While isometric growth was observed in certain populations, others exhibited allometric patterns, indicating potential adaptations to specific environmental conditions. The influence of biotic and abiotic factors, including temperature fluctuations, resource availability, and predation pressures, on the length-weight dynamics was also investigated. The study underscores the importance of considering life history traits, reproductive strategies, and environmental context when interpreting the length-weight relationship in this species. Furthermore, our research has direct implications for the conservation of *R. sierrae*, as alterations in body size and weight may serve as early indicators of environmental stressors and population health. In conclusion, this investigation provides valuable insights into the length-weight relationship of *R. sierrae*, contributing to a deeper understanding of the ecological dynamics of this iconic amphibian. These findings have direct relevance for conservation strategies in the face of ongoing environmental changes, facilitating targeted efforts to preserve the Sierra Nevada yellow-legged frog and its unique mountainous habitat.
 
 ### Introduction
 
-Body mass is a fundamental parameter in ecology because it is related to several important attributes of individuals and populations, including species metabolic rates [@gillooly2001; @brown2004] and population abundance [@peters1983].
-As stated by @feldman2012, among vertebrates, body mass is commonly recorded in birds and mammals, but is less often recorded in amphibians.
-As a result, in amphibians, body size (as snout-vent length) is available for many species, but body mass data are often lacking [@santini2018, pp. 13-14].
-[@Knapp2016]
+Body mass is a fundamental parameter in ecology because it is related to several important attributes of individuals and populations, including species metabolic rates [@gillooly2001; @brown2004] and population abundance [@peters1983]. As stated by @feldman2012, among vertebrates, body mass is commonly recorded in birds and mammals, but is less often recorded in amphibians. As a result, in amphibians, body size (as snout-vent length) is available for many species, but body mass data are often lacking [@santini2018, pp. 13-14]. [@Knapp2016]
 
 In this study, we report body length and mass recorded from more than 3000 post-metamorphic Sierra Nevada yellow-legged frogs (*Rana sierrae*), and describe the relationship between these two variables.
 
@@ -62,10 +50,7 @@ librarian::shelf(here, tidyverse)
 len_wt <- read_csv(here("Workshop_2", "data", "len_wt.csv"))
 ```
 
-As part of a long-term study of amphibians in the Sierra Nevada [@knapp2003], we captured `r nrow(len_wt)` post-metamorphic *R. sierrae* (hereafter, "frogs") from Mesa Lake, Sierra National Forest, during the period 2000-2015 (@fig-lakefrog).
-Frog were captured during the summer active season using hand nets.
-We measured frog snout-vent length to the nearest millimeter using digital calipers and frogs were weighed to the nearest gram using a spring scale.
-To describe the relationship between length and weight, we plotted log~10~(frog weight) against log~10~(frog length).
+As part of a long-term study of amphibians in the Sierra Nevada [@knapp2003], we captured `r nrow(len_wt)` post-metamorphic *R. sierrae* (hereafter, "frogs") from Mesa Lake, Sierra National Forest, during the period 2000-2015 (@fig-lakefrog). Frog were captured during the summer active season using hand nets. We measured frog snout-vent length to the nearest millimeter using digital calipers and frogs were weighed to the nearest gram using a spring scale. To describe the relationship between length and weight, we plotted log~10~(frog weight) against log~10~(frog length).
 
 ### Results
 
@@ -93,12 +78,7 @@ The relationship between frog length and mass was linear on a log~10~ scale and 
 
 *Written by ChatGPT*
 
-It is evident that the intricate interplay between these length and mass is influenced by a myriad of ecological, physiological, and environmental factors.
-Our findings align with previous studies suggesting that variations in body size and mass are not uniform across species, emphasizing the need for a nuanced understanding of the specific ecological context.
-The identification of isometric versus allometric growth patterns in different animal taxa underscores the species-specific adaptations to environmental conditions, resource availability, and life history strategies.
-Furthermore, the observed relationships provide valuable insights into the potential impacts of anthropogenic disturbances on animal populations.
-As environmental changes continue to accelerate, the length-weight relationship serves not only as a crucial metric for understanding the physiological dynamics of species but also as an essential tool for predicting and mitigating the consequences of habitat alterations on biodiversity and ecosystem functioning.
-This discussion contributes to the broader understanding of the intricate ecological tapestry that governs the length-weight relationship in animals and underscores its significance in the context of contemporary conservation challenges.
+It is evident that the intricate interplay between these length and mass is influenced by a myriad of ecological, physiological, and environmental factors. Our findings align with previous studies suggesting that variations in body size and mass are not uniform across species, emphasizing the need for a nuanced understanding of the specific ecological context. The identification of isometric versus allometric growth patterns in different animal taxa underscores the species-specific adaptations to environmental conditions, resource availability, and life history strategies. Furthermore, the observed relationships provide valuable insights into the potential impacts of anthropogenic disturbances on animal populations. As environmental changes continue to accelerate, the length-weight relationship serves not only as a crucial metric for understanding the physiological dynamics of species but also as an essential tool for predicting and mitigating the consequences of habitat alterations on biodiversity and ecosystem functioning. This discussion contributes to the broader understanding of the intricate ecological tapestry that governs the length-weight relationship in animals and underscores its significance in the context of contemporary conservation challenges.
 
 {{< pagebreak >}}
 
@@ -125,12 +105,9 @@ knitr::kable(head(lenwt_table, 15))
 
 ### Acknowledgements
 
-We thank the following for important contributions to this study: E.
-Hegeman and A.
-Lindauer--project and data management, field and laboratory work; A.
-Barbella and K.
-Rose--laboratory work; C.
-Kamoroff and numerous summer technicians--field work; staff at Sequoia-Kings Canyon and Yosemite National Parks, Inyo and Sierra National Forests, California Department of Fish and Wildlife, U.S. Fish and Wildlife Service, University of California-Santa Barbara Institutional Animal Care and Use Committee, and Sierra Nevada Aquatic Research Laboratory--research permits, logistical support, and/or field assistance.
+We thank the following for important contributions to this study: E. Hegeman and A. Lindauer--project and data management, field and laboratory work; A. Barbella and K. Rose--laboratory work; C. Kamoroff and numerous summer technicians--field work; staff at Sequoia-Kings Canyon and Yosemite National Parks, Inyo and Sierra National Forests, California Department of Fish and Wildlife, U.S. Fish and Wildlife Service, University of California-Santa Barbara Institutional Animal Care and Use Committee, and Sierra Nevada Aquatic Research Laboratory--research permits, logistical support, and/or field assistance.
+
+This project was supported by grants from the National Park Service (to R.A.K.), Yosemite Conservancy (to R.A.K.), and National Science Foundation (EF-0723563, to C. Briggs; DEB-1557190, to C. Briggs; DEB-2133401, to M.Q.W; and DBI-2120084, to C. Richards-Zawacki).
 
 ### References
 
