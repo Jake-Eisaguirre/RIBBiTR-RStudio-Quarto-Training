@@ -1,10 +1,14 @@
 ---
 title: "Workshop 2: Notes"
-format: html
+format: 
+  html:
+    embed-resources: true
 editor: visual
 ---
 
 <!--# Open manuscript.qmd, references.bib, length_weight.R, notes.qmd. Open notes.html in browswer window.  -->
+
+**Start Recording**
 
 Focus of Workshop 2 is writing a manuscript using RStudio and Quarto.
 Quarto makes writing a manuscript easy compared to MS Word and Google Doc.
@@ -13,9 +17,9 @@ Similar workflow allows for development of any text document, including lecture 
 
 Will show you a manuscript-like document that I drafted to demonstrate the key features of Quarto, and especially those that facilitate manuscript writing.
 
-Share RStudio window.
+Share Desktop.
 Change Zoom level to optimize viewing for participants.
-Close unnecessary RStudio panes.
+Minimize unnecessary RStudio panes.
 
 Best practices:
 
@@ -50,7 +54,7 @@ Key Quarto features
     -   Quarto makes dealing with references simple (really!).
 
     -   References cited in manuscript and listed in References section are all in a .bib file that you create when you start writing the manuscript.
-        Can be created manually, e.g., by exporting references from Google Scholar as BibTex and copying contents of the exported text file into the .bib file.
+        References can be created manually, e.g., by exporting references from Google Scholar as BibTex and copying contents of the exported text file into the .bib file.
         Quarto provides a much better option: demonstrate process of adding a citation to manuscript and the associated reference to .bib file.
 
     -   Journal-specific formatting of citations/references is specified by .csl file.
@@ -92,11 +96,11 @@ Collaboration: RStudio Integration with Git/GitHub
 -   Developer A (Roland) creates a new project on which he wishes to collaborate with Developer B (Jake).
     Jake clones the remote repo to his local computer.
     To collaborate, Roland makes a change to his local copy of the repo, pushes it to the remote repo, then Jake pulls the changes from the remote to his local repo.
-    collaboratively develop the project by making changes locally pushing, etc., etc.
+    Ongoing collaboration on project by making changes locally, pushing, pulling, etc.
 
 -   Git workflow:
 
-    -   Add: After making changes to one or more files, "add" the modified or new files to the staging area.
+    -   Add: After making changes to one or more files, "add" the modified or new files to a staging area.
 
     -   Commit: Move the files from the staging area to the local repo.
 
@@ -106,9 +110,4 @@ Collaboration: RStudio Integration with Git/GitHub
 
 -   Demonstrate using RStudio: Add text to Acknowledgements section, push, Jake pulls, adds additional text to same section, pushes, I pull.
 
-Questions to resolve:
-
-1.  Share RStudio window or monitor window?
-    The latter would allow sharing of other documents (e.g., html and .docx documents, demonstrate Google Scholar BibTex references).
-
-2.  How large to make text to make it visible to participants?
+**End Recording**
