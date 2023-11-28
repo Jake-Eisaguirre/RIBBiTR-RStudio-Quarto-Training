@@ -1,0 +1,35 @@
+---
+title: "Notes"
+format: html
+editor: visual
+---
+
+## Notes Section
+
+#### Intro
+
+-   3 different presentation options: reveal.js (HMTL), PowerPoint (MS Office), Beamer (LaTeX/PDF)
+
+    -   reveal.js most capable format for customization, interactive features, and recommended by Quarto.
+
+-   Great documentation: <https://quarto.org/docs/presentations/>
+
+#### Action
+
+-   yaml operates the same. Can specify presentation format, theme, footer, etc.
+
+-   Remove Title Option or add author option (author: "By: Jake Eisaguirre").
+
+-   Slide title the same as quarto
+
+-   add horizontal rule \`<hr>\`
+
+-   Insert bullet list
+
+-   Column options for slide, use source or visual editor to create. Can edit column width with source or visual options. Change width of columns
+
+-   tabset column, use source or visual editor. Make bullet list incremental, source or visual editor. Insert images in tabset panel. Adjust location and size, source or visual editor.
+
+-   So basics of making a presentation and could replicate with powerpoint. Take full of advantage of quarto and here is how to utilize code and code outputs
+
+#### 

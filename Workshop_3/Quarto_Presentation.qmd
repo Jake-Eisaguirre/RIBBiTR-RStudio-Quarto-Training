@@ -1,0 +1,58 @@
+---
+title: "Quarto Presentation Example"
+author: "By: Jake Eisaguirre"
+format: 
+  revealjs: 
+   theme: dark
+   logo: images/ribbitr.png
+   embed-resources: true
+editor: visual
+---
+
+## Intro Slide
+
+<hr>
+
+-   Discuss basics of Quarto Presentations
+
+-   Interactive features
+
+-   Display code and code outputs
+
+-   Shiny app?
+
+## Text Column and Image Column
+
+<hr>
+
+::: columns
+::: {.column width="30%"}
+-   Bull Frog
+-   Green Frog
+-   Leopard Frog
+:::
+
+::: {.column width="70%"}
+![](images/bullfrog.jpeg){fig-align="center" width="6in"}
+:::
+:::
+
+## Panel Tabset Example
+
+::: panel-tabset
+#### Frog List {style="color:green"}
+
+::: incremental
+-   Bull Frog
+-   Green Frog
+-   Leopard Frog
+:::
+
+#### Images
+
+![](images/bullfrog.jpeg){fig-align="left" width="3in"}
+
+![](images/greenfrog.jpeg){fig-align="center" width="3in"}
+
+![](images/leopardfrog.jpeg){fig-align="right" width="3in"}
+:::
