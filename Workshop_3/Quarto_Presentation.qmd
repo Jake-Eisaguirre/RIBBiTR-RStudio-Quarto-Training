@@ -22,7 +22,9 @@ editor: visual
 
 -   Shiny app?
 
-## Intro Slide {.smaller}
+------------------------------------------------------------------------
+
+## Intro Slide - smaller text {.smaller}
 
 <hr>
 
@@ -34,6 +36,21 @@ editor: visual
 
 -   Shiny app?
 
+------------------------------------------------------------------------
+
+### Intro Slide - colored title {style="color:#C1FFC1;"}
+
+<hr style="color:#C1FFC1;">
+
+-   Discuss basics of Quarto Presentations
+
+-   Interactive features
+
+-   Display code and code outputs
+
+-   Shiny app?
+
+------------------------------------------------------------------------
 
 ## Text Column and Image Column
 
@@ -50,6 +67,8 @@ editor: visual
 ![](images/bullfrog.jpeg){fig-align="center" width="6in"}
 :::
 :::
+
+------------------------------------------------------------------------
 
 ## Panel Tabset Example
 
@@ -70,6 +89,26 @@ editor: visual
 
 ![](images/leopardfrog.jpeg){fig-align="right" width="3in"}
 :::
+
+------------------------------------------------------------------------
+
+##  {auto-animate="true"}
+
+<div>
+
+![](images/greenfrog.jpeg){fig-align="center" width="3in"}
+
+</div>
+
+##  {auto-animate="true"}
+
+<div>
+
+![](images/greenfrog.jpeg){fig-align="center" width="8in"}
+
+</div>
+
+------------------------------------------------------------------------
 
 ## Code and Code Output - Tabs
 
@@ -112,6 +151,8 @@ ggplot(data = iris, aes(x = Sepal.Length,
 ```
 :::
 
+------------------------------------------------------------------------
+
 ## Code and Code Output - Scrollable {.scrollable}
 
 <hr>
@@ -132,6 +173,8 @@ ggplot(data = iris, aes(x = Sepal.Length,
   theme_classic()
 
 ```
+
+------------------------------------------------------------------------
 
 ## Code and Code Output - codefold
 
@@ -155,6 +198,8 @@ ggplot(data = iris, aes(x = Sepal.Length,
   theme_classic()
 ```
 
+------------------------------------------------------------------------
+
 ## Code and Code Output - line numbers {.incremental}
 
 <hr>
@@ -176,15 +221,88 @@ ggplot(data = iris, aes(x = Sepal.Length,
   theme_classic()
 ```
 
-## {auto-animate="true"}
-:::{}
-![](images/greenfrog.jpeg){fig-align="center" width="3in"}
-:::
+------------------------------------------------------------------------
 
-## {auto-animate="true"}
-:::{}
-![](images/greenfrog.jpeg){fig-align="center" width="8in"}
-:::
+## Teaching Example - How to Make a `ggplot()` {.scrollable}
 
+<hr>
 
-## Interactive Slide (Shiny)
+```{r}
+#| echo: true
+#| out-height: 7in
+#| code-line-numbers: "|1|3" 
+
+library(tidyverse)
+
+data(iris)
+
+head(iris)
+```
+
+------------------------------------------------------------------------
+
+## Teaching Example-How to Make a `ggplot()` {.scrollable}
+
+<hr>
+
+```{r}
+#| echo: true
+#| out-height: 7in
+#| code-line-numbers: "|5|6-7|8" 
+
+library(tidyverse)
+
+data(iris)
+
+ggplot(data = iris, 
+       aes(x = Sepal.Length,
+           y = Petal.Length)) +
+  geom_point()
+```
+
+------------------------------------------------------------------------
+
+## Teaching Example-How to Make a `ggplot()` {.scrollable}
+
+<hr>
+
+```{r}
+#| echo: true
+#| out-height: 7in
+#| code-line-numbers: "|8" 
+
+library(tidyverse)
+
+data(iris)
+
+ggplot(data = iris, 
+       aes(x = Sepal.Length,
+           y = Petal.Length,
+           color = Species)) +
+  geom_point()
+```
+
+------------------------------------------------------------------------
+
+## Teaching Example-How to Make a `ggplot()` {.scrollable}
+
+<hr>
+
+```{r}
+#| echo: true
+#| out-height: 7in
+#| code-line-numbers: "|9|10" 
+
+library(tidyverse)
+
+data(iris)
+
+ggplot(data = iris, aes(x = Sepal.Length, 
+                        y = Petal.Length, 
+                        color = Species)) +
+  geom_point() +
+  geom_smooth() +
+  theme_classic()
+```
+
+------------------------------------------------------------------------
