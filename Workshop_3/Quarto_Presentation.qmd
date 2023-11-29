@@ -113,10 +113,10 @@ editor: visual
 ## Code and Code Output - Tabs
 
 ::: panel-tabset
-## Outputs
+#### Outputs
 
 ```{r}
-#| results: hide
+#| echo: false
 library(tidyverse)
 
 data(iris)
@@ -130,7 +130,7 @@ ggplot(data = iris, aes(x = Sepal.Length,
 
 ```
 
-## Code
+#### Code
 
 ```{r}
 #| echo: true
@@ -206,7 +206,7 @@ ggplot(data = iris, aes(x = Sepal.Length,
 
 ```{r}
 #| echo: true
-#| out-height: 7in
+#| out-height: 6in
 #| code-line-numbers: "|8|9|5-7" 
 
 library(tidyverse)
