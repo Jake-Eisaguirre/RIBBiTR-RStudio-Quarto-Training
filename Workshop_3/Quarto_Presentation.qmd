@@ -22,6 +22,19 @@ editor: visual
 
 -   Shiny app?
 
+## Intro Slide {.smaller}
+
+<hr>
+
+-   Discuss basics of Quarto Presentations
+
+-   Interactive features
+
+-   Display code and code outputs
+
+-   Shiny app?
+
+
 ## Text Column and Image Column
 
 <hr>
@@ -162,5 +175,16 @@ ggplot(data = iris, aes(x = Sepal.Length,
   geom_smooth() +
   theme_classic()
 ```
+
+## {auto-animate="true"}
+:::{}
+![](images/greenfrog.jpeg){fig-align="center" width="3in"}
+:::
+
+## {auto-animate="true"}
+:::{}
+![](images/greenfrog.jpeg){fig-align="center" width="8in"}
+:::
+
 
 ## Interactive Slide (Shiny)
