@@ -6,6 +6,7 @@ format:
    theme: dark
    logo: images/ribbitr.png
    embed-resources: true
+   transition: slide
 editor: visual
 ---
 
@@ -40,7 +41,7 @@ editor: visual
 ## Panel Tabset Example
 
 ::: panel-tabset
-#### Frog List {style="color:green"}
+#### Frog List
 
 ::: incremental
 -   Bull Frog
@@ -57,29 +58,39 @@ editor: visual
 ![](images/leopardfrog.jpeg){fig-align="right" width="3in"}
 :::
 
-## Code and Code Output
+## Code and Code Output - Tabs
 
 ::: panel-tabset
 ## Outputs
 
 ```{r}
+#| results: hide
+library(tidyverse)
 
+data(iris)
+
+ggplot(data = iris, aes(x = Sepal.Length, 
+                        y = Petal.Length, 
+                        color = Species)) +
+  geom_point() +
+  geom_smooth() +
+  theme_classic()
 
 ```
 
 ## Code
 
 ```{r}
-
+#| echo: true
+#| eval: false
 
 library(tidyverse)
-library(kableExtra)
 
 data(iris)
 
-kable(head(iris))
-
-ggplot(data = iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
+ggplot(data = iris, aes(x = Sepal.Length, 
+                        y = Petal.Length, 
+                        color = Species)) +
   geom_point() +
   geom_smooth() +
   theme_classic()
@@ -87,5 +98,69 @@ ggplot(data = iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
 
 ```
 :::
+
+## Code and Code Output - Scrollable {.scrollable}
+
+<hr>
+
+```{r}
+#| echo: true
+#| out-height: 7in
+
+library(tidyverse)
+
+data(iris)
+
+ggplot(data = iris, aes(x = Sepal.Length, 
+                        y = Petal.Length, 
+                        color = Species)) +
+  geom_point() +
+  geom_smooth() +
+  theme_classic()
+
+```
+
+## Code and Code Output - codefold
+
+<hr>
+
+```{r}
+#| echo: true
+#| out-height: 7in
+#| code-fold: true
+#| fig-cap: "(a) Sepal and Petal length differ between species"
+
+library(tidyverse)
+
+data(iris)
+
+ggplot(data = iris, aes(x = Sepal.Length, 
+                        y = Petal.Length, 
+                        color = Species)) +
+  geom_point() +
+  geom_smooth() +
+  theme_classic()
+```
+
+## Code and Code Output - line numbers {.incremental}
+
+<hr>
+
+```{r}
+#| echo: true
+#| out-height: 7in
+#| code-line-numbers: "|8|9|5-7" 
+
+library(tidyverse)
+
+data(iris)
+
+ggplot(data = iris, aes(x = Sepal.Length, 
+                        y = Petal.Length, 
+                        color = Species)) +
+  geom_point() +
+  geom_smooth() +
+  theme_classic()
+```
 
 ## Interactive Slide (Shiny)
