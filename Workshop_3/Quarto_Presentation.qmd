@@ -20,7 +20,7 @@ editor: visual
 
 -   Display code and code outputs
 
--   Shiny app?
+-   Reproducible - Github
 
 ------------------------------------------------------------------------
 
@@ -34,7 +34,7 @@ editor: visual
 
 -   Display code and code outputs
 
--   Shiny app?
+-   Reproducible - Github
 
 ------------------------------------------------------------------------
 
@@ -48,7 +48,7 @@ editor: visual
 
 -   Display code and code outputs
 
--   Shiny app?
+-   Reproducible - Github
 
 ------------------------------------------------------------------------
 
@@ -223,31 +223,31 @@ ggplot(data = iris, aes(x = Sepal.Length,
 
 ------------------------------------------------------------------------
 
-## Teaching Example - How to Make a `ggplot()` {.scrollable}
+## Teaching Example - How to Make a `ggplot()` {.scrollable .smaller}
 
 <hr>
 
 ```{r}
 #| echo: true
-#| out-height: 7in
-#| code-line-numbers: "|1|3" 
+#| code-line-numbers: "|1|2|6" 
 
 library(tidyverse)
+library(kableExtra)
 
 data(iris)
 
-head(iris)
+kable(head(iris))
 ```
 
 ------------------------------------------------------------------------
 
-## Teaching Example-How to Make a `ggplot()` {.scrollable}
+## Teaching Example-How to Make a `ggplot()` {.scrollable .smaller}
 
 <hr>
 
 ```{r}
 #| echo: true
-#| out-height: 7in
+#| out-height: 5in
 #| code-line-numbers: "|5|6-7|8" 
 
 library(tidyverse)
@@ -262,13 +262,13 @@ ggplot(data = iris,
 
 ------------------------------------------------------------------------
 
-## Teaching Example-How to Make a `ggplot()` {.scrollable}
+## Teaching Example-How to Make a `ggplot()` {.scrollable .smaller}
 
 <hr>
 
 ```{r}
 #| echo: true
-#| out-height: 7in
+#| out-height: 5in
 #| code-line-numbers: "|8" 
 
 library(tidyverse)
@@ -284,13 +284,13 @@ ggplot(data = iris,
 
 ------------------------------------------------------------------------
 
-## Teaching Example-How to Make a `ggplot()` {.scrollable}
+## Teaching Example-How to Make a `ggplot()` {.scrollable .smaller}
 
 <hr>
 
 ```{r}
 #| echo: true
-#| out-height: 7in
+#| out-height: 5in
 #| code-line-numbers: "|9|10" 
 
 library(tidyverse)
@@ -302,7 +302,40 @@ ggplot(data = iris, aes(x = Sepal.Length,
                         color = Species)) +
   geom_point() +
   geom_smooth() +
-  theme_classic()
+  theme_classic() 
+```
+
+------------------------------------------------------------------------
+
+## Github - Push and Pull
+
+<hr>
+
+![](images/github.png){fig-align="center"}
+
+------------------------------------------------------------------------
+
+## Teaching Example-How to Make a `ggplot()` {.scrollable .smaller}
+
+<hr>
+
+```{r}
+#| echo: true
+#| out-height: 4.8in
+#| code-line-numbers: "|11|12" 
+
+library(tidyverse)
+
+data(iris)
+
+ggplot(data = iris, aes(x = Sepal.Length, 
+                        y = Petal.Length, 
+                        color = Species)) +
+  geom_point() +
+  geom_smooth() +
+  theme_classic() +
+  xlab("Sepal Length") +
+  ylab("Petal Length")
 ```
 
 ------------------------------------------------------------------------
