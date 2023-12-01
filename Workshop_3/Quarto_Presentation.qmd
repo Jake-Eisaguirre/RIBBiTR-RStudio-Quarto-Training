@@ -58,7 +58,7 @@ editor: visual
 
 ::: columns
 ::: {.column width="30%"}
--   Bull Frog
+-   American Bullfrog
 -   Green Frog
 -   Leopard Frog
 :::
@@ -76,7 +76,7 @@ editor: visual
 #### Frog List
 
 ::: incremental
--   Bull Frog
+-   American Bullfrog
 -   Green Frog
 -   Leopard Frog
 :::
@@ -207,7 +207,7 @@ ggplot(data = iris, aes(x = Sepal.Length,
 ```{r}
 #| echo: true
 #| out-height: 6in
-#| code-line-numbers: "|8|9|5-7" 
+#| code-line-numbers: "|8|9|5-7"  
 
 library(tidyverse)
 
@@ -293,7 +293,7 @@ ggplot(data = iris,
 #| out-height: 5in
 #| code-line-numbers: "|9|10" 
 
-library(tidyverse)
+library(tidyverse) 
 
 data(iris)
 
