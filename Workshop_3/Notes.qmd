@@ -4,8 +4,6 @@ format: html
 editor: visual
 ---
 
-## Notes Section
-
 #### Intro
 
 -   3 different presentation options: reveal.js (HMTL), PowerPoint (MS Office), Beamer (LaTeX/PDF)
@@ -24,13 +22,11 @@ editor: visual
 
 -   add horizontal rule below title and horizontal rule at bottom of slide to keep clean
 
-    \`<hr>\`
-
 -   Insert bullet list
 
 -   Make bulleted text smaller then title with `.smaller` Class
 
--   Change color of title and "<hr>" with CSS styles hexcode. `color:#C1FFC1;`
+-   Change color of title and horizontal rule with CSS styles hexcode. `color:#C1FFC1;`
 
 -   Specify columns in slide, add bulleted list, add image, change width of columns
 
