@@ -22,21 +22,29 @@ editor: visual
 
 -   Slide title the same as quarto
 
--   add horizontal rule below title and horizontal rule at bottom of slide to keep clean
+-   Slide 1
+
+    -   add horizontal rule below title and horizontal rule at bottom of slide to keep clean
 
     -   more straight forward and not have to manually manipulate!
 
--   Insert bullet list
+    -   Insert bullet list
 
--   Make bulleted text smaller then title with `.smaller` Class
+-   Slide 2
 
--   Change color of title and horizontal rule with CSS styles hexcode. `color:#C1FFC1;`
+    -   Make bulleted text smaller then title with `.smaller` Class
+
+-   Slide 3
+
+    -   Change color of title and horizontal rule with CSS styles hexcode. `color:#C1FFC1;`
+
+-   Slide 3
 
 -   Specify columns in slide, add bulleted list, add image, change width of columns
 
 -   examine source and visual editor.
 
--    make tabset feature, Make bullet list incremental Insert images in tabset panel. Adjust location and size, flip between source or visual editor. Code and words, code automtically inserting output
+-   make tabset feature, Make bullet list incremental Insert images in tabset panel. Adjust location and size, flip between source or visual editor. Code and words, code automtically inserting output
 
 -   Create animation using the `auto-animate="true"`
 
