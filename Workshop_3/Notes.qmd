@@ -12,6 +12,8 @@ editor: visual
 
 -   Great documentation: <https://quarto.org/docs/presentations/>
 
+-   Think of RStudio as nothing more then a fancy text editor that can run code, create outputs, and make documents/presentations.
+
 #### Action
 
 -   yaml operates the same. Can specify presentation format, theme, footer, etc.
