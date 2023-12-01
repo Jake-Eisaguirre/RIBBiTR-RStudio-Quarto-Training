@@ -22,14 +22,28 @@ editor: visual
 
 -   Slide title the same as quarto
 
--   add horizontal rule \`<hr>\`
+-   add horizontal rule below title and horizontal rule at bottom of slide to keep clean
+
+    \`<hr>\`
 
 -   Insert bullet list
 
--   Column options for slide, use source or visual editor to create. Can edit column width with source or visual options. Change width of columns
+-   Make bulleted text smaller then title with `.smaller` Class
 
--   tabset column, use source or visual editor. Make bullet list incremental, source or visual editor. Insert images in tabset panel. Adjust location and size, source or visual editor.
+-   Change color of title and "<hr>" with CSS styles hexcode. `color:#C1FFC1;`
+
+-   Specify columns in slide, add bulleted list, add image, change width of columns
+
+-   examine source and visual editor.
+
+-    make tabset feature, Make bullet list incremental Insert images in tabset panel. Adjust location and size, flip between source or visual editor.
+
+-   Create animation using the `auto-animate="true"`
 
 -   So basics of making a presentation and could replicate with powerpoint. Take full of advantage of quarto and here is how to utilize code and code outputs
+
+-   Remind people of cell options
+
+    -   https://quarto.org/docs/reference/cells/cells-knitr.html
 
 #### 
