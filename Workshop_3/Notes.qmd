@@ -16,42 +16,75 @@ editor: visual
 
 #### Action
 
--   yaml operates the same. Can specify presentation format, theme, footer, etc.
+-   yaml operates the same.
+    Can specify presentation format, theme, footer, etc.
 
 -   Remove Title Option or add author option (author: "By: Jake Eisaguirre").
 
--   Slide title the same as quarto
+Slide title the same as quarto
 
--   Slide 1
+##### Slide 1
 
-    -   add horizontal rule below title and horizontal rule at bottom of slide to keep clean
+-   add horizontal rule below title and horizontal rule at bottom of slide to keep clean
 
-    -   more straight forward and not have to manually manipulate!
+-   more straight forward and not have to manually manipulate!
 
-    -   Insert bullet list
+-   Insert bullet list
 
--   Slide 2
+##### Slide 2
 
-    -   Make bulleted text smaller then title with `.smaller` Class
+-   Make bulleted text smaller then title with `.smaller` Class
 
--   Slide 3
+##### Slide 3
 
-    -   Change color of title and horizontal rule with CSS styles hexcode. `color:#C1FFC1;`
+-   Change color of title and horizontal rule with CSS styles hexcode.
+    `color:#C1FFC1;`
 
--   Slide 3
+##### Slide 4
 
 -   Specify columns in slide, add bulleted list, add image, change width of columns
 
 -   examine source and visual editor.
 
--   make tabset feature, Make bullet list incremental Insert images in tabset panel. Adjust location and size, flip between source or visual editor. Code and words, code automtically inserting output
+##### Slide 5
+
+-   make tabset feature, Make bullet list incremental Insert images in tabset panel.
+    Adjust location and size, flip between source or visual editor.
+    Code and words, code automtically inserting output
+
+##### Slide 6
 
 -   Create animation using the `auto-animate="true"`
 
--   So basics of making a presentation and could replicate with powerpoint. Take full of advantage of quarto and here is how to utilize code and code outputs
+##### Slide 7
+
+-   So basics of making a presentation and could replicate with powerpoint.
+    Take full of advantage of quarto and here is how to utilize code and code outputs
 
 -   Remind people of cell options
 
     -   https://quarto.org/docs/reference/cells/cells-knitr.html
+
+-   Cell option choices in code to truly customize what code you see and the output of your code
+
+##### Slide 8
+
+-   Make slide scrollable, point out cell options
+
+##### Slide 9
+
+-   code folding, point out cell options
+
+##### Slide 10
+
+-   High light line numbers
+
+##### Slide 11
+
+-   Teaching example, line numbers
+
+##### Slide 12
+
+-   Github example
 
 #### 
