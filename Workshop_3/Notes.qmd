@@ -37,8 +37,7 @@ Slide title the same as quarto
 
 ##### Slide 3
 
--   Change color of title and horizontal rule with CSS styles hexcode.
-    `color:#C1FFC1;`
+-   Change color of title and horizontal rule with CSS styles hexcode. `color:#C1FFC1;`
 
 ##### Slide 4
 
@@ -48,9 +47,7 @@ Slide title the same as quarto
 
 ##### Slide 5
 
--   make tabset feature, Make bullet list incremental Insert images in tabset panel.
-    Adjust location and size, flip between source or visual editor.
-    Code and words, code automtically inserting output
+-   make tabset feature, Make bullet list incremental Insert images in tabset panel. Adjust location and size, flip between source or visual editor. Code and words, code automtically inserting output
 
 ##### Slide 6
 
