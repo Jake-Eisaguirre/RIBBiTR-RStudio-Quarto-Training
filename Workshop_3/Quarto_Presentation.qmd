@@ -50,6 +50,10 @@ editor: visual
 
 -   Collaboration - Github
 
+    ::: notes
+    add my notes
+    :::
+
 ------------------------------------------------------------------------
 
 ## Text Column and Image Column
@@ -149,6 +153,15 @@ ggplot(data = iris, aes(x = Sepal.Length,
 
 
 ```
+
+#### Data
+
+```{r}
+library(kableExtra)
+data(iris)
+
+kable(iris)
+```
 :::
 
 ------------------------------------------------------------------------
@@ -160,7 +173,7 @@ ggplot(data = iris, aes(x = Sepal.Length,
 ```{r}
 #| echo: true
 #| out-height: 7in
-
+ 
 library(tidyverse)
 
 data(iris)

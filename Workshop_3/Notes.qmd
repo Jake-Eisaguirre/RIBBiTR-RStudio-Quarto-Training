@@ -51,7 +51,7 @@ Slide title the same as quarto
 
 ##### Slide 6
 
--   Create animation using the `auto-animate="true"`
+-   Create animation using the. `auto-animate="true"`
 
 ##### Slide 7
 
