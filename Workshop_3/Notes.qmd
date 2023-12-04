@@ -37,7 +37,7 @@ Slide title the same as quarto
 
 ##### Slide 3
 
--   Change color of title and horizontal rule with CSS styles hexcode. `color:#C1FFC1;`
+-   Change  color of title and horizontal rule with CSS styles hexcode. `color:#C1FFC1;`
 
 ##### Slide 4
 
