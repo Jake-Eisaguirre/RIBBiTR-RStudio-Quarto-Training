@@ -4,7 +4,7 @@ author: "By: Jake Eisaguirre"
 format: 
   revealjs: 
    theme: dark
-   logo: images/nsf_logo.png
+   logo: images/ribbitr.png
    embed-resources: true
    transition: slide
 editor: visual

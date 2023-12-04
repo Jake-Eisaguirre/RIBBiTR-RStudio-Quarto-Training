@@ -6,7 +6,7 @@ editor: visual
 
 #### Intro
 
--   3 different presentation options: reveal.js (HMTL), PowerPoint (MS Office), Beamer (LaTeX/PDF)
+-   3 different presentation options: reveal.js (HTML), PowerPoint (MS Office), Beamer (LaTeX/PDF)
 
     -   reveal.js most capable format for customization, interactive features, and recommended by Quarto.
 
@@ -66,11 +66,11 @@ Slide title the same as quarto
 
 ##### Slide 8
 
--   Make slide scrollable, point out cell options
+-   Make slide scrollable, point out cell options, out-height
 
 ##### Slide 9
 
--   code folding, point out cell options
+-   code folding, point out cell options, fig-cap
 
 ##### Slide 10
 
